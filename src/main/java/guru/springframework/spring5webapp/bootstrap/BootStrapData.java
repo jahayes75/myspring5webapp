@@ -9,7 +9,9 @@ import guru.springframework.spring5webapp.repositories.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-
+/**
+ * Created by jh on 02/10/21.
+ */
 @Component
 public class BootStrapData implements CommandLineRunner {
 
@@ -38,7 +40,7 @@ public class BootStrapData implements CommandLineRunner {
         System.out.println("Publisher Count: " + publisherRepository.count());
 
         Author eric = new Author("Eric", "Evans");
-        Book ddd = new Book("Domain Driven Design", "123123");
+        Book ddd = new Book("domain Driven Design", "123123");
         eric.getBooks().add(ddd);
         ddd.getAuthors().add(eric);
 

@@ -98,4 +98,3 @@ public class Book {
         return id != null ? id.hashCode() : 0;
     }
 }
-
